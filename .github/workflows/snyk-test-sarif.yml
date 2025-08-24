@@ -15,3 +15,5 @@ jobs:
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: snyk-sarif1.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
